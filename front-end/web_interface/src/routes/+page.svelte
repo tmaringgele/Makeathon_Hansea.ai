@@ -3,22 +3,23 @@
 	import welcome_fallback from "$lib/images/svelte-welcome.png";
 	import { Search, Button } from "flowbite-svelte";
 	import {ExclamationCircleSolid} from "flowbite-svelte-icons"
+	import sat1 from "$lib/images/sat1.png"
 
 	let searchTerm = "";
 
 	let suppliers = [
 		{
-			name: "brunos bananen gmbh",
-			warning: true
+			name: "MQ748",
+			
 		},
 		{
-			name: "helmuts haselnuss ag",
-			warning: true
+			name: "MR956",
+			
 
 		},
 		{
-			name: "Paulinas Palmöl Produktions Gmbh",
-			warning: false
+			name: "MLL452",
+			
 		},
 	];
 
@@ -57,12 +58,17 @@
 			let sTitle = s.name.toLowerCase();
 			return sTitle.includes(searchTerm.toLowerCase());
 		}) as s}
-			<div class=" border rounded">
-			<div class="flex flex-row gap-16">
-				<span class="uppercase text-sm">{s.name}</span> <ExclamationCircleSolid color="red" />
-			</div>
+			<div class=" cursor-pointer border rounded bg-beigedunkel flex flex-col gap-4 justify-center content-center">
+			
+			<img 
+			src={sat1}
+			class="w-[400px] "
+			
+			/>
+			<span class="absolute self-center text-white">Plantagenstraße 11</span>
+		</div>
 				
-			</div>
+			
 		{/each}
 	
 </section>
