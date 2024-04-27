@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="app bg-gradient-to-b from-blue-200 to-green-300">
+<div class="app bg-gradient-to-b from-blue-200  to-primary-500">
 	<Header />
 
 	<main>
