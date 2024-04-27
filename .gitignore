@@ -1,2 +1,5 @@
 
 /.venv
+*.zip
+/data
+*.pptx
