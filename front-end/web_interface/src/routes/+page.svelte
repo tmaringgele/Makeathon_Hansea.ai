@@ -34,7 +34,7 @@
 
 <section class="flex flex-row">
 	<div class="flex flex-row items-center content-center">
-		<h1 class="self-center text-3xl">All supplier locations</h1>
+		<h1 class="self-center text-3xl font-bold">All supplier locations</h1>
 	</div>
 	<div>
 		<Search
