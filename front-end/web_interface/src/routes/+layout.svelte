@@ -1,11 +1,11 @@
 <script>
 	import Header from './Header.svelte';
-	import './styles.css';
+	//import './styles.css';
 	import "../app.css";
 
 </script>
 
-<div class="app">
+<div class="app bg-gradient-to-b from-blue-200 to-green-300">
 	<Header />
 
 	<main>
@@ -13,7 +13,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Protecting the Rainforest with AI since 2024</p>
 	</footer>
 </div>
 

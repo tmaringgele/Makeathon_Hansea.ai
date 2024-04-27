@@ -3,6 +3,8 @@
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 	import { Search, Button } from 'flowbite-svelte';
 
+	let searchTerm = ""
+
 </script>
 
 <svelte:head>
@@ -12,7 +14,8 @@
 
 <section>
 
-	<Search>
-		<Button>Search</Button>
+	<Search bind:searchTerm>
+		<Button color="green">Search</Button>
 	  </Search>
+	  {searchTerm}
 </section>
