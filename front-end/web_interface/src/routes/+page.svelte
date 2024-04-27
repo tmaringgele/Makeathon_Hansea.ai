@@ -2,18 +2,23 @@
 	import welcome from "$lib/images/svelte-welcome.webp";
 	import welcome_fallback from "$lib/images/svelte-welcome.png";
 	import { Search, Button } from "flowbite-svelte";
+	import {ExclamationCircleSolid} from "flowbite-svelte-icons"
 
 	let searchTerm = "";
 
 	let suppliers = [
 		{
 			name: "brunos bananen gmbh",
+			warning: true
 		},
 		{
 			name: "helmuts haselnuss ag",
+			warning: true
+
 		},
 		{
 			name: "Paulinas Palmöl Produktions Gmbh",
+			warning: false
 		},
 	];
 
@@ -32,13 +37,13 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="flex flex-row">
-	<div class="flex flex-row items-center content-center">
-		<h1 class="self-center text-3xl font-bold">All supplier locations</h1>
+<section class="flex flex-row content-between items-center">
+	<div class=" w-full flex flex-row content-end self-end">
+		<h1 class="self-end pt-3 text-3xl font-bold ">All supplier locations</h1>
 	</div>
-	<div>
+	<div class="">
 		<Search
-			class="mt-9 focus:border-beigedunkel "
+			class="mt-9 focus:border-beigedunkel w-26 "
 			bind:value={searchTerm}
 			placeholder="Search for Suppliers"
 			on:input={search}
@@ -46,15 +51,18 @@
 	</div>
 </section>
 
-<section>
-	<ul>
+<section class="mt-12 flex gap-8 flex-row ">
+	
 		{#each suppliers.filter((s) => {
 			let sTitle = s.name.toLowerCase();
 			return sTitle.includes(searchTerm.toLowerCase());
 		}) as s}
-			<li>
-				{s.name}
-			</li>
+			<div class=" border rounded">
+			<div class="flex flex-row gap-16">
+				<span class="uppercase text-sm">{s.name}</span> <ExclamationCircleSolid color="red" />
+			</div>
+				
+			</div>
 		{/each}
-	</ul>
+	
 </section>
