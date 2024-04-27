@@ -4,3 +4,4 @@
 /data
 *.pptx
 /ResUNet
+/my_tf_env
