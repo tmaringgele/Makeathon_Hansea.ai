@@ -69,7 +69,7 @@
 			class="w-[400px] "
 			
 			/>
-			<span class="absolute self-center text-white">Plantagenstraße 11</span>
+			<span class="absolute self-center text-white">Quadrant {s.name}</span>
 		</div>
 				
 			
