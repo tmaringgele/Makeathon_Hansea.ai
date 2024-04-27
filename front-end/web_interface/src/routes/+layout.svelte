@@ -9,19 +9,25 @@
 <div class="app bg-beigehell">
 	<!-- <Header />-->
 	<sections class="flex justify-center content-center">
+		
 		<img src={header} class="w-full h-64 object-cover" />
+		
+		
+		
 		<div
 			class="absolute self-center bg-white opacity-40 rounded-3xl flex gap-4"
 		>
-			<div
+			<a href="/"
 				class=" text-black text-5xl opacity-100 px-4 py-4 flex justify-center content-center"
 			>
 			<img
 			src={logo}
 			class="w-[100px] self-end">
 				<span class="self-center">Green Guard</span>
-			</div>
+	</a>
+		
 		</div>
+	
 	</sections>
 	<main>
 		<slot />

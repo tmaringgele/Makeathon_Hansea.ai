@@ -62,6 +62,7 @@
 			let sTitle = s.name.toLowerCase();
 			return sTitle.includes(searchTerm.toLowerCase());
 		}) as s}
+			<a href="/{s.name}">
 			<div class=" cursor-pointer border rounded bg-beigedunkel flex flex-col gap-4 justify-center content-center">
 			
 			<img 
@@ -70,7 +71,7 @@
 			
 			/>
 			<span class="absolute self-center text-white">Quadrant {s.name}</span>
-		</div>
+		</div></a>
 				
 			
 		{/each}
