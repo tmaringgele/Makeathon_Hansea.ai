@@ -4,6 +4,8 @@
 	import { Search, Button } from "flowbite-svelte";
 	import {ExclamationCircleSolid} from "flowbite-svelte-icons"
 	import sat1 from "$lib/images/sat1.png"
+	import header from "$lib/images/header.jpg"
+
 
 	let searchTerm = "";
 
@@ -37,6 +39,8 @@
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
+
+
 
 <section class="flex flex-row content-between items-center">
 	<div class=" w-full flex flex-row content-end self-end">
