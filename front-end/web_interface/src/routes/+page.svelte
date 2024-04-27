@@ -1,32 +1,30 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import { Search, Button } from 'flowbite-svelte';
+	import welcome from "$lib/images/svelte-welcome.webp";
+	import welcome_fallback from "$lib/images/svelte-welcome.png";
+	import { Search, Button } from "flowbite-svelte";
 
-	let searchTerm = ""
+	let searchTerm = "";
 
 	let suppliers = [
 		{
-			name: "brunos bananen gmbh"
+			name: "brunos bananen gmbh",
 		},
 		{
-			name: "helmuts haselnuss ag"
+			name: "helmuts haselnuss ag",
 		},
 		{
-			name: "Paulinas Palmöl Produktions Gmbh"
-		}
-	]
+			name: "Paulinas Palmöl Produktions Gmbh",
+		},
+	];
 
 	let filteredSuppliers = [];
 
-
-	const search = () => {	
-		return filteredSuppliers = suppliers.filter(s => {
+	const search = () => {
+		return (filteredSuppliers = suppliers.filter((s) => {
 			let sTitle = s.name.toLowerCase();
-			return sTitle.includes(searchTerm.toLowerCase())
-		});
-	}
-
+			return sTitle.includes(searchTerm.toLowerCase());
+		}));
+	};
 </script>
 
 <svelte:head>
@@ -34,26 +32,29 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-
-	<Search class="mt-9" bind:value={searchTerm} placeholder="Search for Suppliers" on:input={search}>
-		<div class="mx-3 my-3">
-		<Button color="green">Search</Button>
-		</div>
-	  </Search>
-	  
+<section class="flex flex-row">
+	<div class="flex flex-row items-center content-center">
+		<h1 class="self-center text-3xl">All supplier locations</h1>
+	</div>
+	<div>
+		<Search
+			class="mt-9 focus:border-beigedunkel "
+			bind:value={searchTerm}
+			placeholder="Search for Suppliers"
+			on:input={search}
+		></Search>
+	</div>
 </section>
 
 <section>
 	<ul>
-	{#each suppliers.filter(s => {
-		let sTitle = s.name.toLowerCase();
-		return sTitle.includes(searchTerm.toLowerCase())
-	}) as s}
-
-	<li>
-		{s.name}
-</li>
-	{/each}
-</ul>
+		{#each suppliers.filter((s) => {
+			let sTitle = s.name.toLowerCase();
+			return sTitle.includes(searchTerm.toLowerCase());
+		}) as s}
+			<li>
+				{s.name}
+			</li>
+		{/each}
+	</ul>
 </section>

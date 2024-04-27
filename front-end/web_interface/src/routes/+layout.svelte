@@ -5,8 +5,8 @@
 
 </script>
 
-<div class="app bg-gradient-to-b from-blue-200  to-primary-500">
-	<Header />
+<div class="app bg-beigehell ">
+	<!-- <Header />-->
 
 	<main>
 		<slot />

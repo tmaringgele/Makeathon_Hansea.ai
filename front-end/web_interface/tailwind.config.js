@@ -7,9 +7,15 @@ const config = {
   darkMode: 'selector',
 
   theme: {
+   
+    fontFamily: {
+      'body': "Steelfish"
+    },
     extend: {
       colors: {
         // flowbite-svelte
+        beigehell: '#ffffef',
+        beigedunkel: '#ECE6D2',
         primary: {
           50: '#ebfef7',
           100: '#d0fbe9',
