@@ -5,10 +5,8 @@
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+	<div class="ml-1 text-lg ">
+		Green Guard🛰️
 	</div>
 
 	<nav>
@@ -31,10 +29,8 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
+	<div class="mr-1">
+		by Hansea.ai
 	</div>
 </header>
 
