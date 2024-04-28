@@ -4,26 +4,32 @@
 	import { Search, Button } from "flowbite-svelte";
 	import {ExclamationCircleSolid} from "flowbite-svelte-icons"
 	import sat1 from "$lib/images/sat1.png"
+	import sat2 from "$lib/images/sat2.png"
+	import sat3 from "$lib/images/sat3.png"
+
+
 	import header from "$lib/images/header.jpg"
 
-
+	
 	let searchTerm = "";
 
 	let suppliers = [
 		{
 			name: "MQ748",
-			
+			warning:true,
 		},
 		{
 			name: "MR956",
+			warning:true,
 			
-
 		},
 		{
 			name: "MLL452",
-			
+			warning:true,
 		},
 	];
+
+
 
 	let filteredSuppliers = [];
 

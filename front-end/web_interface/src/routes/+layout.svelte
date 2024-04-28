@@ -4,6 +4,29 @@
 	import "../app.css";
 	import header from "$lib/images/header.jpg";
 	import logo from "$lib/images/logo.png";
+
+	import sat1 from "$lib/images/sat1.png"
+	import sat2 from "$lib/images/sat2.png"
+	import sat3 from "$lib/images/sat3.png"
+	let suppliers = [
+		{
+			name: "MQ748",
+			warning:true,
+			img: sat1
+		},
+		{
+			name: "MR956",
+			warning:true,
+			img: sat2
+			
+
+		},
+		{
+			name: "MLL452",
+			warning:true,
+			img: sat3
+		},
+	];
 </script>
 
 <div class="app bg-beigehell">
