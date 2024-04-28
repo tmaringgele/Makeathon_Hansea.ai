@@ -52,7 +52,7 @@
 
 
 
-<section class="flex flex-row content-between items-center">
+<section class="flex flex-row content-between items-center flex-wrap">
 	<div class=" w-full flex flex-row content-end self-end">
 		<h1 class="self-end pt-3 text-3xl font-bold ">All supplier locations</h1>
 	</div>
@@ -66,7 +66,7 @@
 	</div>
 </section>
 
-<section class="mt-12 flex gap-8 flex-row ">
+<section class="mt-12 flex gap-8 flex-row flex-wrap ">
 	
 		{#each suppliers.filter((s) => {
 			let sTitle = s.name.toLowerCase();
