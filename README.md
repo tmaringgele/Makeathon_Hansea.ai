@@ -1,4 +1,4 @@
-# Makeathon_Hansea.ai
+Deforestation detection with CV. Coded in 24h Hackathon.
 
 ## View our Front-End:
 https://makeathon-hansea-ai.vercel.app/
