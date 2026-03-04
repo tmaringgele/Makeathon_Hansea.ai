@@ -1,6 +1,6 @@
-Deforestation detection with CV. Coded in 24h Hackathon.
+Deforestation detection in the Amazon rainforest using CV. Coded in 24h Hackathon.
 
-## View our Front-End:
+## View our Front-End (Product Mock):
 https://makeathon-hansea-ai.vercel.app/
 
 
